@@ -29,9 +29,9 @@
  */
 (function(Application, GUI, Dialogs, Utils, API, VFS) {
 
-    var ApplicationMyName = function(args, metadata) {
-          Application.apply(this, ['ApplicationMyName', args, metadata, {
-            src: './noVNC/vnc.html',
+    var ApplicationNoVNC = function(args, metadata) {
+          Application.apply(this, ['ApplicationNoVNC', args, metadata, {
+            src: 'vendor/vnc.html',
                 title: metadata.name,
                 icon: metadata.icon,
                 width: 640,
@@ -42,10 +42,10 @@
                 }]);
             };
 
-      ApplicationMyName.prototype = Object.create(Application.prototype);
+      ApplicationNoVNC.prototype = Object.create(Application.prototype);
 
         OSjs.Applications = OSjs.Applications || {};
-          OSjs.Applications.ApplicationMyName = OSjs.Applications.ApplicationMyName || {};
-            OSjs.Applications.ApplicationMyName.Class = ApplicationMyName;
+          OSjs.Applications.ApplicationNoVNC = OSjs.Applications.ApplicationNoVNC || {};
+            OSjs.Applications.ApplicationNoVNC.Class = ApplicationNoVNC;
 
 })(OSjs.Helpers.IFrameApplication, OSjs.GUI, OSjs.Dialogs, OSjs.Utils, OSjs.API, OSjs.VFS);

@@ -1,6 +1,6 @@
 {
-  "className":  "ApplicationMyName",
-  "name":       "MyName",
+  "className":  "ApplicationNoVNC",
+  "name":       "noVNC",
   "mime":       null,
   "icon":       "categories/applications-system.png",
   "preload":    [
