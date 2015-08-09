@@ -1,0 +1,3 @@
+[submodule "noVNC/vendor"]
+	path = noVNC/vendor
+	url = https://github.com/kanaka/noVNC.git
